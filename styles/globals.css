@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+.funnyHead {
+  font-family: 'Fruktur', cursive;
+  color: #68D391;
+  font-size: 2rem;
+}
+
+.headerBg {
+  background: rgb(0,0,0);
+  background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(67,67,67,1) 100%);
+}
+.blob1 {
+  width: 20rem;
+
+}
+
+@media screen and (maxWidth: 976px) {
+  
+  
+}
+@media screen and (maxWidth: 768px) {
+  .homeGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+  
+}
+@media screen and (maxWidth: 480px) {
+  .homeGrid {
+    display: grid;
+    grid-template-columns:1fr;
+  }
+  
+}
