@@ -54,7 +54,7 @@ const Property = ({ item }) => {
           mt="1"
           as="h4"
           lineHeight="tight"
-          isTruncated
+          // isTruncated
           textAlign={'left'}
         >
           {title.length > 30 ? title.substring(0, 30) + '...' : title}
