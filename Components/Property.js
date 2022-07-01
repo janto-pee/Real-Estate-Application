@@ -29,6 +29,7 @@ const Property = ({ item }) => {
         src={coverPhoto ? coverPhoto.url : DefaultImage}
         width={400}
         height={260}
+        alt='propert image'
       />
       <Box p="6">
         <Box display="flex" alignItems="baseline" textAlign={'left'}>

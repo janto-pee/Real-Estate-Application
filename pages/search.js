@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Image from 'next/image'
 import {
   Box,
   Center,
@@ -14,7 +15,7 @@ import Property from "../Components/Property";
 import Filters from "../Components/Filters";
 import noresult from "../assets/indecisive-redhead.jpg";
 
-const search = ({ searchKeys }) => {
+const Search = ({ searchKeys }) => {
 
   const [filterState, setFilterState] = useState(false);
   const router = useRouter();
@@ -53,7 +54,7 @@ const search = ({ searchKeys }) => {
           marginTop="5"
           marginBottom="5"
         >
-          <Image src={noresult} />
+          <Image src={noresult} width={400} height={260} alt='real estate image' />
           <Text fontSize="xl" marginTop="3">
             No Result Found.
           </Text>
@@ -63,7 +64,7 @@ const search = ({ searchKeys }) => {
   );
 };
 
-export default search;
+export default Search;
 
 export async function getServerSideProps({ query }) {
   const purpose = query.purpose || "for-rent";
