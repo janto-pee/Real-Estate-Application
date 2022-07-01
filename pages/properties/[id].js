@@ -1,8 +1,8 @@
 import { Box, Badge, Text } from "@chakra-ui/react";
-import { fetchApi } from "../../Utils/fetchApi";
 import Image from 'next/image';
 import DefaultImage from "../../assets/single-family-home.jpg";
 import HorizontalScrollMenu from "../../Components/HorizontalScrollMenu";
+import { fetchApi } from "../../utils/fetchApi";
 
 const PropertyDetail = ({propertyDetails}) => {
         const {
